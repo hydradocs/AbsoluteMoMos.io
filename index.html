@@ -14,23 +14,25 @@
     
 
 
-    <!-- header section  -->
-    <header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+
+ <!-- header section  -->
+ <header class="text-gray-400 bg-gray-900 body-font ">
+  <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-light mb-4 md:mb-0" style="text-decoration: none; cursor: pointer;" href="index.html">
       <img src="https://img.favpng.com/3/14/8/restaurant-chef-logo-menu-clip-art-png-favpng-fQ43rUcGhWwzJrH9KsrZArXKj.jpg" alt="logo" class="logo">
       <span class="ml-3 text-xl">Absolute MoMoS</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">Home</a>
-      <a class="mr-5 hover:text-gray-900">Momos</a>
-      <a class="mr-5 hover:text-gray-900">Drinks</a>
-      <a class="mr-5 hover:text-gray-900">Snacks</a>
-      <a class="mr-5 hover:text-gray-900">etc services</a>
+      <a class="mr-5 hover:text-orange-500 active text-warning" href="index.html">Home</a>
+      <a class="mr-5 hover:text-orange-500 " href="momo.html">Momos</a>
+      <a class="mr-5 hover:text-orange-500" href="drinks.html">Drinks</a>
+      
+      <a class="mr-5 hover:text-orange-500" href="about.html">About</a>
     </nav>
-    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"> <a href="login.html">
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style="background-color: orange; color: cornsilk;"> <a href="byt.html">
 
-      Order Now
+      Book Your Table
     </a>
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -89,7 +91,7 @@
       <strong class="font-semibold">50% off</strong>
       <!-- <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg> -->
     </p>
-    <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Book your table<span aria-hidden="true">&rarr;</span></a>
+    
   </div>
   <div class="flex flex-1 justify-end">
     <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
@@ -115,16 +117,16 @@
 
 
 
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-200 bg-light body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-400">Hungry Kya ?😒🤤
-        <br class="hidden lg:inline-block">Then why are you not thinking about momo with our special drink.🍟
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Hungry Kya ?😒🤤
+        <br class="hidden lg:inline-block">Then why are you not thinking about Absolute Momos with Moctail.🍸🍸
       </h1>
       <p class="mb-8 leading-relaxed">
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> <a href="login.html">Log In</a></button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Book</button>
+        
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -192,7 +194,7 @@
           <div style="display: flex;">
 
             <p class="mt-1">₹100.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('Veg MoMoS', 100)">Add</button>
           </div>
         </div>
       </div>
@@ -205,7 +207,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">Chicken MoMoS</h2>
           <div style="display: flex;">
             <p class="mt-1">₹150.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('Chicken MoMoS',150)">Add</button>
           </div>
         </div>
       </div>
@@ -218,7 +220,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">Paneer MoMoS</h2>
           <div style="display: flex;">
             <p class="mt-1">₹99.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('Paneer MoMoS', 99)">Add</button>
           </div>
         </div>
       </div>
@@ -231,7 +233,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">Fried MoMoS</h2>
           <div style="display: flex;">
             <p class="mt-1">₹199.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('Fried MoMoS', 199)">Add</button>
           </div>
         </div>
       </div>
@@ -244,7 +246,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">The Meal Box</h2>
           <div style="display: flex;">
             <p class="mt-1">₹299.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('The Meal Box', 299)">Add</button>
           </div>
         </div>
       </div>
@@ -257,7 +259,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">Weird combinations MoMoS</h2>
           <div style="display: flex;">
             <p class="mt-1">₹249.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" onclick="addToCart('Weird combinations MoMoS',249)">Add</button>
           </div>
         </div>
       </div>
@@ -283,7 +285,7 @@
           <h2 class="text-gray-900 title-font text-lg font-medium">Tandoori MoMoS</h2>
           <div style="display: flex;">
             <p class="mt-1">₹250.00</p>
-            <button type="button" class="btn btn-success ml-md-auto">Add</button>
+            <button type="button" class="btn btn-success ml-md-auto" \>Add</button>
           </div>
         </div>
       </div>
@@ -298,28 +300,75 @@
 
 
 <!-- review -->
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-400  body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
         <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
       </svg>
-      <p class="leading-relaxed text-lg">
+      <p class="leading-relaxed text-lg text-dark">
         <!-- Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p> -->
         <!-- Food is like breathing; we take it for granted as we get to eat a meal three times a day and snacks in between. But, the reality is that this is one of the basic necessities for which we work really hard every day. We often go for the food we find tasty and pleasing without considering its nutritional content. The main goal of eating food is to provide the body with all the essential nutrients it needs to function correctly. Therefore we must eat a balanced diet of carbohydrates, proteins, fats, vitamins, and minerals. Different food groups contain varying levels of essential nutrients, so eating various foods is crucial to get all the nutrients. Our diets should have grains for carbohydrates, seeds, pulses, and meats for protein, fruits, and vegetables for vitamins, minerals, and fibres, and dairy for important fats and protein. A balanced diet is a way to lead a healthy and happy life. -->
         “Truly, love is delightful and pleasant food, supplying, as it does, rest to the weary, strength to the weak, and joy to the sorrowful. It in fact renders the yoke of truth easy and its burden light.”
       </p>
      
         <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-      <h2 class="text-gray-400 font-medium title-font tracking-wider text-sm">– Saint Bernard</h2>
+      <h2 class="text-gray-500 font-medium title-font tracking-wider text-sm">– Saint Bernard</h2>
       <!-- <p class="text-gray-500">Senior Product Designer</p> -->
     </div>
   </div>
 </section>
 
 
+<!-- feature -->
+
+<section class="text-gray-600 body-font bg-gray-900">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-light mb-4">Features</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto accusantium ad soluta quisquam! Laboriosam voluptatibus deleniti, blanditiis dolorum veritatis similique explicabo animi fugit error obcaecati ut repudiandae vel natus!.</p>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/66/66841.png" alt="">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-light text-lg title-font font-medium mb-3">Quick Delivery</h2>
+          <p class="leading-relaxed text-base text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maxime, esse mollitia minima iure cumque aspernatur magnam? Labore sequi dolores voluptatem odit eum debitis quasi..</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/3570/3570168.png" alt="">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-light text-lg title-font font-medium mb-3">High Quality Food</h2>
+          <p class="leading-relaxed text-base text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dicta praesentium vel eaque rem temporibus autem, iure, cum odio ullam amet maiores harum nihil quam?.</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+          <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/location-travel-map/hotel-icon.png" alt="..." style="width: 75%;">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-light text-lg title-font font-medium mb-3">Luxery Hotel Rooms</h2>
+          <p class="leading-relaxed text-base text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, veritatis repellat velit quis excepturi blanditiis minima sed temporibus culpa, sint voluptatibus alias aspernatur, id maxime!</p>
+        </div>
+      </div>
+    </div>
+    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" >
+     <a href="about.html">About us</a> 
+     </button>
+  </div>
+</section>
 
 
+
+<!-- Gallery -->
 
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
@@ -399,9 +448,7 @@
 <footer class="text-gray-400 bg-gray-900 body-fontt">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg> -->
+      
       <img src="https://img.favpng.com/3/14/8/restaurant-chef-logo-menu-clip-art-png-favpng-fQ43rUcGhWwzJrH9KsrZArXKj.jpg" alt="logo" class="logo">
       <span class="ml-3 text-xl">Absolute MoMoS</span>
     </a>
@@ -443,7 +490,7 @@
 
 
 
-
+<script src="cart.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

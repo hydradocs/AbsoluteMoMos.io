@@ -3,13 +3,15 @@
 <html lang="en">
 <head>
   <!-- Design by foolishdeveloper.com -->
-    <title>Login</title>
+    <title>Sign Up</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://img.favpng.com/3/14/8/restaurant-chef-logo-menu-clip-art-png-favpng-fQ43rUcGhWwzJrH9KsrZArXKj.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="form.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="signup.css">
+    
 </head>
 <body>
 <!-- background image -->
@@ -19,21 +21,26 @@
         <div class="shape"></div>
     </div>
 
-<!-- login form -->
+<!-- Sign Up form -->
     
     <form>
-        <h3>Log In</h3>
+        <h3>Sign Up</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username" required>
+        <input type="text" placeholder="Email or Phone" id="username">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" required>
+        <input type="password" placeholder="Password" id="password">
+
+        
+        <label for="password">Confirm Password</label>
+        <input type="password" placeholder="confirm password" id="password">
+        
 
         <button>Log In</button>
    
         <br><br>
-        <p>Don't have account? <a href="signup.html">Sign Up</a></p>
+        <p>Already have account? <a href="login.html">Login</a></p>
        
     </form>
 </body>
